@@ -1,5 +1,4 @@
-package com.mycompany.calculadoraids;
-
+package CalculadoraIDS;
 import java.util.Scanner;
 
 public class Division {

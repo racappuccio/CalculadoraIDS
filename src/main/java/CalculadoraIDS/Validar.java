@@ -1,7 +1,5 @@
-package com.mycompany.calculadoraids;
-
+package CalculadoraIDS;
 import java.util.Scanner;
-
 public class Validar {
 
     public static int validarEnteroPositivo(Scanner scanner) {
