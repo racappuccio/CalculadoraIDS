@@ -1,4 +1,4 @@
-package CalculadoraIDS;
+package com.mycompany.calculadoraids;
 import java.util.Scanner;
 public class Validar {
 

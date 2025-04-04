@@ -1,4 +1,4 @@
-package CalculadoraIDS;
+package com.mycompany.calculadoraids;
 import java.util.Scanner;
 
 public class Division {
@@ -26,5 +26,4 @@ public class Division {
              continuar = Validar.validarContinuar(scanner, "división");
         } while (continuar);
     }
-
 }

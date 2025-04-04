@@ -1,9 +1,9 @@
-package CalculadoraIDS;
+package com.mycompany.calculadoraids;
 
 
-import CalculadoraIDS.Multiplicacion;
-import CalculadoraIDS.Resta;
-import CalculadoraIDS.Suma;
+//import com.mycompany.calculadoraids.Multiplicacion;
+//import com.mycompany.calculadoraids.Resta;
+//import com.mycompany.calculadoraids.Suma;
 import java.util.Scanner;
 public class CalculadoraIDS {
 
