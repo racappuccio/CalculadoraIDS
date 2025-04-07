@@ -9,15 +9,10 @@ public class Division {
             System.out.print("Ingrese el primer número entero positivo: ");
             int num1 = Validar.validarEnteroPositivo(scanner);
             System.out.print("Ingrese el segundo número entero positivo (distinto de 0): ");
-            int num2;
-            do {
-                num2 = Validar.validarEnteroPositivo(scanner);
-                if (num2 == 0) {
-                    System.out.println("Error: El divisor no puede ser 0. Intente nuevamente.");
-                }
-            } while (num2 == 0);
-
-            int mayor = Math.max(num1, num2);
+            int num2 = Validar.validarDivisor(scanner);
+            
+            //Verifica que el cociente se efectúe utilizando en primer término el mayor número ingresado y, en segundo término, el menor número ingresado
+            int mayor = Math.max(num1, num2); //obtiene el numero mayor entre num1 y num2, y se guarda el valor en la variable mayor
             int menor = Math.min(num1, num2);
             int resultado = mayor / menor;
 

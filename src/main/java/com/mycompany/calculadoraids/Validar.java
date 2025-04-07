@@ -6,17 +6,40 @@ public class Validar {
         int num;
         while (true) {
             while (!scanner.hasNextInt()) {
-                System.out.println("Error: Debe ingresar un número entero positivo.");
+                System.out.print("Error: Debe ingresar un número entero positivo. Intente nuevamente: ");
                 scanner.next();
             }
             num = scanner.nextInt();
             if (num > 0) {
                 return num;
             } else {
-                System.out.println("Error: El número debe ser positivo y mayor que cero.");
-            }
+                System.out.print("Error: El número debe ser positivo y mayor que cero. Intente nuevamente: ");
+                }
+            } 
         }
+    
+    
+    public static int validarDivisor(Scanner scanner) {
+        int num;
+        while (true) {
+            while (!scanner.hasNextInt()) {
+                System.out.print("Error: Debe ingresar un número entero positivo. Intente nuevamente: ");
+                scanner.next();
+            }
+            num = scanner.nextInt();
+            if (num == 0){
+                System.out.print("Error: El divisor no puede ser 0. Intente nuevamente: ");
+            } else {
+                if (num > 0) {
+                    return num;
+                } else {
+                    System.out.print("Error: El número debe ser positivo y mayor que cero. Intente nuevamente: ");
+                }
+            }
+        } 
     }
+        
+    
       public static boolean validarContinuar(Scanner scanner, String operacion) {
         String respuesta;
         do {
