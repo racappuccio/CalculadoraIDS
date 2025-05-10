@@ -1,13 +1,19 @@
 package com.mycompany.calculadoraids;
 
 import java.util.Scanner;
+/**
+ * @brief Clase principal que ejecuta el menú de la calculadora.
+ */
 public class CalculadoraIDS {
-
+    /**
+     * @brief Método principal que muestra el menú y gestiona la selección del usuario.
+     * @param args Argumentos pasados por línea de comandos (no se usan).
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcion;
         
-        do {
+        do { //menu de opciones 
             System.out.println("*** CALCULADORA BÁSICA ***");
             System.out.println("[1] – SUMAR.");
             System.out.println("[2] – RESTAR.");

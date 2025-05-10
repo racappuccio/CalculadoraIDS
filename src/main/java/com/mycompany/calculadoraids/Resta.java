@@ -1,8 +1,13 @@
 package com.mycompany.calculadoraids;
 import java.util.Scanner;
-
+/**
+ * @brief Clase que contiene la operación de resta.
+ */
 public class Resta {
-
+   /**
+     * @brief Realiza la operación de resta entre dos números ingresados por el usuario.
+     * @param scanner Objeto Scanner para la entrada del usuario.
+     */
     public static void restar(Scanner scanner) {
         boolean continuar;
         do {

@@ -27,7 +27,7 @@ public class Validar {
                 System.out.println("Error: Debe ingresar un número válido.");
             }
         }
-    }
+    }   
 /**
      * @brief Pregunta al usuario si desea continuar con la operación actual.
      * @param scanner Objeto Scanner para la entrada del usuario.
