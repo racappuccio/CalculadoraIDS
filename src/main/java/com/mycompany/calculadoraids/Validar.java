@@ -1,12 +1,18 @@
 package com.mycompany.calculadoraids;
-
 import java.util.Scanner;
 
+/**
+ * @brief Clase que contiene métodos de validación de entrada.
+ */
 public class Validar {
-
-    public static int validarEnteroPositivo(Scanner scanner) { // nos dimos cuenta de que el metodo validarEnteroPositivo y validarDivisor hacian la misma funcion de validar si el numero 
-        int num;                                               // era un entero positivo y se paso la validacion de cero al metodo validarEnteroPositivo.
-        while (true) {                                         //ademas se agrego un bloque try catch para el manejo de exepciones (de caracteres que no sean tipo int)
+     /**
+     * @brief Solicita al usuario un número entero positivo y valida que lo sea.
+     * @param scanner Objeto Scanner para la entrada del usuario.
+     * @return Número entero positivo ingresado por el usuario.
+     */
+    public static int validarEnteroPositivo(Scanner scanner) { 
+        int num;                                             
+        while (true) {                                        
             try {
                 System.out.print("Ingrese un número entero positivo: ");
                 num = Integer.parseInt(scanner.next());
@@ -22,7 +28,12 @@ public class Validar {
             }
         }
     }
-
+/**
+     * @brief Pregunta al usuario si desea continuar con la operación actual.
+     * @param scanner Objeto Scanner para la entrada del usuario.
+     * @param operacion Nombre de la operación que se está realizando.
+     * @return true si el usuario desea continuar, false en caso contrario.
+     */
     public static boolean validarContinuar(Scanner scanner, String operacion) {
         String respuesta;
         while (true) {
